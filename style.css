@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h2 {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 50px;
+  color: #292F36;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 25px;
+  color: #292F36;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  color: #292F36;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header .logo-text {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 40px;
+  margin-left: 5px;
+}
+.header .menu ul {
+  display: flex;
+  list-style-type: none;
+  font-family: "Jost", sans-serif;
+  gap: 60px;
+}
+.header .menu ul a {
+  font-size: 20px;
+  color: #292F36;
+}
+
+.banner {
+  background-image: url(./img/banner.png);
+  height: 758px;
+  padding: 208px 0 208px 52px;
+  border-radius: 50px;
+  margin-bottom: 96px;
+}
+.banner-box {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.banner-title {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 65px;
+  color: #292F36;
+}
+.banner-text {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+}
+.banner-btn {
+  align-self: start;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  padding: 26px 48px;
+  background-color: #292F36;
+  color: #FFF;
+  border: none;
+  border-radius: 18px;
+}
+.banner-btn:hover {
+  cursor: pointer;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 93px;
+  margin-bottom: 100px;
+}
+.projects-top {
+  text-align: center;
+  width: 60%;
+}
+.projects-top h2 {
+  margin-bottom: 8px;
+}
+.projects-top p {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+}
+.projects-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+.projects-bottom .project:nth-child(1) img {
+  border-radius: 0 70px 0 0;
+}
+.projects-bottom .project:nth-child(2) img {
+  border-radius: 70px 0 0 0;
+}
+.projects-bottom .project:nth-child(3) img {
+  border-radius: 0 0 70px 0;
+}
+.projects-bottom .project:nth-child(4) img {
+  border-radius: 0 0 0 70px;
+}
+.projects-bottom .project-info {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.projects-bottom .project-category {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+}
+
+.counters {
+  width: 100vw;
+  height: 457px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4F0EC;
+  gap: 74px;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: 96px;
+}
+.counters .counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid #CDA274;
+  padding-right: 56px;
+}
+.counters .counter-number {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 85px;
+  color: #CDA274;
+}
+.counters .counter-text {
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  color: #4D5053;
+}
+.counters .counter:last-child {
+  border: none;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 96px;
+}
+.blog-header {
+  width: 67%;
+  margin-bottom: 50px;
+}
+.blog-header-text {
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  color: #4D5053;
+}
+.blog-body {
+  display: flex;
+  gap: 25px;
+}
+.blog-post {
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  border: 2px solid #E7E7E7;
+  border-radius: 50px;
+  gap: 10px;
+}
+.blog-post-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.blog-post-arrow {
+  align-self: end;
+}
+.blog-post img {
+  border-radius: 45px 45px 0 0;
+}
+.blog-post h3 {
+  width: 82%;
+  line-height: 125%;
+}
+.blog-post-date {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: #4D5053;
+}
+.blog-post:hover {
+  cursor: pointer;
+  background-color: #F4F0EC;
+}
+.blog-post:hover circle {
+  fill: #FFF;
+}
+
+.footer {
+  display: flex;
+  gap: 101px;
+  margin-bottom: 100px;
+}
+.footer .left-logo {
+  display: flex;
+  margin-bottom: 15px;
+}
+.footer .left-logo-text {
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+}
+.footer .left-img {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.footer .left-text {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  margin-bottom: 31px;
+}
+.footer .left .socials {
+  display: flex;
+  gap: 54px;
+}
+.footer .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-right: 250px;
+}
+.footer .middle a {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+}
+.footer .right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer .right p {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+}/*# sourceMappingURL=style.css.map */
