@@ -1,8 +1,9 @@
+@import "blog";
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap");
 
-$titletext: #292F36;
-$bodytext: #4D5053;
+$titletext: #292f36;
+$bodytext: #4d5053;
 
 * {
     padding: 0;
@@ -19,7 +20,7 @@ a:visited {
 }
 
 h2 {
-    font-family: 'DM Serif Display', sans-serif;
+    font-family: "DM Serif Display", sans-serif;
     font-size: 50px;
     color: $titletext;
     font-style: normal;
@@ -27,7 +28,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'DM Serif Display', sans-serif;
+    font-family: "DM Serif Display", sans-serif;
     font-size: 25px;
     color: $titletext;
     font-style: normal;
@@ -43,23 +44,22 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 0;
+    margin: 40px auto;
     color: $titletext;
 
     .logo {
-    display: flex;
-    align-items: center;
-    &-text {
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 40px;
-        margin-left: 5px;
-    }
-
+        display: flex;
+        align-items: center;
+        &-text {
+            font-family: "DM Serif Display", sans-serif;
+            font-size: 40px;
+            margin-left: 5px;
+        }
     }
     .menu ul {
         display: flex;
         list-style-type: none;
-        font-family: 'Jost', sans-serif;
+        font-family: "Jost", sans-serif;
         gap: 60px;
         a {
             font-size: 20px;
@@ -81,35 +81,34 @@ h3 {
         gap: 18px;
     }
     &-title {
-        font-family: 'DM Serif Display', sans-serif;
+        font-family: "DM Serif Display", sans-serif;
         font-size: 65px;
         color: $titletext;
     }
     &-text {
         color: $bodytext;
-        font-family: 'Jost', sans-serif;
+        font-family: "Jost", sans-serif;
         font-size: 22px;
     }
     &-btn {
         align-self: start;
-        font-family: 'Jost', sans-serif;
+        font-family: "Jost", sans-serif;
         font-size: 18px;
         padding: 26px 48px;
         background-color: $titletext;
-        color: #FFF;
+        color: #fff;
         border: none;
         border-radius: 18px;
         &:hover {
             cursor: pointer;
         }
     }
-
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     gap: 93px;
     margin-bottom: 100px;
     &-top {
@@ -120,7 +119,7 @@ h3 {
         }
         p {
             color: $bodytext;
-            font-family: 'Jost', sans-serif;
+            font-family: "Jost", sans-serif;
             font-size: 22px;
         }
     }
@@ -149,22 +148,20 @@ h3 {
             }
             &-category {
                 color: $bodytext;
-                font-family: 'Jost', sans-serif;
+                font-family: "Jost", sans-serif;
                 font-size: 18px;
             }
         }
-
     }
-
 }
 
 .counters {
     width: 100vw;
     height: 457px;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    background-color: #F4F0EC;
+    background-color: #f4f0ec;
     gap: 74px;
     margin-left: calc(50% - 50vw);
     margin-bottom: 96px;
@@ -172,54 +169,78 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-right: 2px solid #CDA274;
+        border-right: 2px solid #cda274;
         padding-right: 56px;
         &-number {
-            font-family: 'DM Serif Display', sans-serif;
+            font-family: "DM Serif Display", sans-serif;
             font-size: 85px;
-            color: #CDA274;
+            color: #cda274;
         }
         &-text {
-            font-family: 'Jost', sans-serif;
+            font-family: "Jost", sans-serif;
             font-size: 22px;
             color: $bodytext;
         }
         &:last-child {
             border: none;
         }
-
     }
-
 }
 
 .blog {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items:center;
+    align-items: center;
     margin-bottom: 96px;
+    h2 {
+        align-self: start;
+        margin-bottom: 20px;
+    }
     &-header {
         width: 67%;
         margin-bottom: 50px;
         &-text {
-            font-family: 'Jost', sans-serif;
+            font-family: "Jost", sans-serif;
             font-size: 22px;
             color: $bodytext;
         }
     }
     &-body {
         display: flex;
-        gap:25px;
+        flex-wrap: wrap;
+        gap: 25px;
     }
     &-post {
+        flex: 1 1 0;
+        width: 31%;
         padding: 21px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         text-align: left;
-        border: 2px solid #E7E7E7;
+        border: 2px solid #e7e7e7;
         border-radius: 50px;
         gap: 10px;
+        position: relative;
+        &-box {
+            display: flex;
+            flex-direction: column;
+            img {
+                margin-bottom: 8px;
+            }
+            .sticker {
+                background-color: #fff;
+                padding: 10px;
+                position: absolute;
+                bottom: 42%;
+                left: 10%;
+                font-family: Jost;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 8px 8px 8px 0px;
+            }
+        }
         &-info {
             display: flex;
             align-items: center;
@@ -238,19 +259,17 @@ h3 {
             line-height: 125%;
         }
         &-date {
-            font-family: 'Jost', sans-serif;
+            font-family: "Jost", sans-serif;
             font-size: 16px;
             color: $bodytext;
         }
         &:hover {
             cursor: pointer;
-            background-color:#F4F0EC;
+            background-color: #f4f0ec;
             circle {
-                fill: #FFF;
+                fill: #fff;
             }
         }
-
-
     }
 }
 
@@ -263,7 +282,7 @@ h3 {
             display: flex;
             margin-bottom: 15px;
             &-text {
-                font-family: 'DM Serif Display', serif;
+                font-family: "DM Serif Display", serif;
                 font-size: 40px;
             }
         }
@@ -276,7 +295,7 @@ h3 {
 
         &-text {
             color: $bodytext;
-            font-family: 'Jost', sans-serif;
+            font-family: "Jost", sans-serif;
             font-size: 22px;
             margin-bottom: 31px;
         }
@@ -293,7 +312,7 @@ h3 {
         padding-right: 250px;
         a {
             color: $bodytext;
-            font-family: 'Jost', sans-serif;
+            font-family: "Jost", sans-serif;
             font-size: 22px;
         }
     }
@@ -304,7 +323,7 @@ h3 {
         gap: 25px;
         p {
             color: $bodytext;
-            font-family: 'Jost', sans-serif;
+            font-family: "Jost", sans-serif;
             font-size: 22px;
         }
     }
