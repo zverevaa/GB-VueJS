@@ -163,27 +163,34 @@ h3 {
     align-items: center;
     justify-content: center;
     background-color: #f4f0ec;
-    gap: 74px;
-    margin-left: calc(50% - 50vw);
+    margin-left: calc(49.3% - 50vw);
     margin-bottom: 96px;
-    .counter {
+    .counters-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        border-right: 2px solid #cda274;
-        padding-right: 56px;
-        &-number {
-            font-family: "DM Serif Display", sans-serif;
-            font-size: 85px;
-            color: #cda274;
-        }
-        &-text {
-            font-family: "Jost", sans-serif;
-            font-size: 22px;
-            color: $bodytext;
-        }
-        &:last-child {
-            border: none;
+        justify-content: center;
+        gap: 74px;
+        .counter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 2px solid #cda274;
+            padding-right: 56px;
+            &-number {
+                font-family: "DM Serif Display", sans-serif;
+                font-size: 85px;
+                color: #cda274;
+            }
+            &-text {
+                font-family: "Jost", sans-serif;
+                font-size: 22px;
+                color: $bodytext;
+            }
+            &:last-child {
+                padding-right: 0;
+                border: none;
+            }
         }
     }
 }

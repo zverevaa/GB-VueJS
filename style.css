@@ -347,28 +347,35 @@ h3 {
   align-items: center;
   justify-content: center;
   background-color: #f4f0ec;
-  gap: 74px;
-  margin-left: calc(50% - 50vw);
+  margin-left: calc(49.3% - 50vw);
   margin-bottom: 96px;
 }
-.counters .counter {
+.counters .counters-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 74px;
+}
+.counters .counters-container .counter {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-right: 2px solid #cda274;
   padding-right: 56px;
 }
-.counters .counter-number {
+.counters .counters-container .counter-number {
   font-family: "DM Serif Display", sans-serif;
   font-size: 85px;
   color: #cda274;
 }
-.counters .counter-text {
+.counters .counters-container .counter-text {
   font-family: "Jost", sans-serif;
   font-size: 22px;
   color: #4d5053;
 }
-.counters .counter:last-child {
+.counters .counters-container .counter:last-child {
+  padding-right: 0;
   border: none;
 }
 
